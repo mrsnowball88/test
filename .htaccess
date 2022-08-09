@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+	
+AddDefaultCharset UTF-8
+
+RewriteCond %{REQUEST_URI} !^/project/webroot/
+RewriteCond %{REQUEST_URI} !^(.+)\.
+RewriteRule .+ index.php
